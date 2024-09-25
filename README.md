@@ -9,9 +9,19 @@
 - 한 서버 내에서 여러 개 수행 가능
 
 <h3> 3. code </h3>
-<p> app.listen(port, () => {
+<h4> app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
-})</p>
+})</h4>
 
 - port : 몇 번 포트에 대해 듣고 있는지
 - console.log : 글 출력
+
+<h4> HTTP 메소드 </h4>
+- Get : 주소창 <br>
+- Post : 주소창 X <br>
+
+<h4> 라우팅 </h4>
+- 라우팅에 따라 보여지는 페이지 달라짐
+
+<h4> 콜백함수(callback) </h4>
+- 함수(끝나고 실행할 함수)

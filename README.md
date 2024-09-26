@@ -35,12 +35,19 @@
 
 
 <hr>
-<h3>1) index.js </h3>
+<h4>1) index.js </h4>
 => express 기본 동작 
 
-<h3>2) ParamRouting.js </h3>
+<h4>2) ParamRouting.js </h4>
 => 파라미터 값으로 라우팅
 
-<h3>3) exampleAPI.js </h3>
+<h4>3) exampleAPI.js </h4>
 => 예제 API 만들어보기 <br>
 ex) app.get('/dog', ...)
+
+<h4>4) Animal Sound </h4>
+- 동물 소리 API 서버 만들기 실습
+![image](https://github.com/user-attachments/assets/ba2a3db7-c479-4c64-a77e-e97ad93894c0)
+
+++ CORS 이슈
+- npm i cors

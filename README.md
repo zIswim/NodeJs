@@ -29,9 +29,12 @@
 - 다른 코드의 인수로서 넘겨주는 실행 가능한 코드
 
 <h4> 예제 API </h4>
-- Get방식(예시)
+- Get방식(예시)<br>
+
+```
     - app.get('/dog', (req, res) => {}..} <br>
     - app.get('/cat', (req, res) => {}..} <br>
+```
 
 
 <hr>
@@ -46,8 +49,32 @@
 ex) app.get('/dog', ...)
 
 <h4>4) Animal Sound </h4>
-- 동물 소리 API 서버 만들기 실습
-![image](https://github.com/user-attachments/assets/ba2a3db7-c479-4c64-a77e-e97ad93894c0)
+- 동물 소리 API 서버 만들기 실습 <br>
 
-++ CORS 이슈
-- npm i cors
+``` 
+app.get('/sound/:name', (req, res) => {
+    const { name } = req.params
+
+    if (name == 'dog'){
+        res.json({'sound':'멍멍'})
+    } else if (name == 'cat'){
+        res.json({'sound':'야옹'})
+    } else if (name == 'pig'){
+        res.json({'sound':'꿀꿀'})
+    } else{
+        res.json({'sound':'알수없음'})
+    }
+    console.log(name)
+}) 
+```
+<h4> 5) Practice.js / Practice.html </h4>
+- fetch 함수 사용 <br>
+- 서버 실행한 상태에서 html 파일 열기 <br>
+
+<h5> ++ CORS 이슈 </h5>
+
+```
+- npm install cors
+```
+
+- cors 에러 : 다른 출처의 자원에 접근해서 리소스를 사용
